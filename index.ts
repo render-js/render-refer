@@ -8,7 +8,7 @@ import {PluginGeneric} from "./generic/PluginGeneric";
 export class Component extends ComponentTemplate{
     constructor(config:{
         name:string,
-        template:string | {},
+        template:string,
         mode?:string,
         boxStyle?: string,
         props?:{} | string[],

@@ -1,6 +1,6 @@
 export interface ComponentGeneric{
         getName():string;
-        getTemplate():string | {};
+        getTemplate():string;
         getMode():string;
         getBoxStyle(): string;
         getProps(): {};

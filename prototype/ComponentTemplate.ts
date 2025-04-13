@@ -7,7 +7,7 @@ export class ComponentTemplate implements ComponentGeneric{
 
     private readonly name: string;
 
-    private readonly template: string | {};
+    private readonly template: string;
 
     private readonly mode:string;
 
@@ -29,7 +29,7 @@ export class ComponentTemplate implements ComponentGeneric{
 
     constructor(config:{
         name:string,
-        template:string | {},
+        template:string,
         mode?:string,
         boxStyle?: string,
         props?:{} | string[],
@@ -115,7 +115,7 @@ export class ComponentTemplate implements ComponentGeneric{
         return this.name;
     }
 
-    getTemplate(): string | {} {
+    getTemplate(): string {
         return this.template;
     }
 
